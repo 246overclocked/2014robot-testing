@@ -9,10 +9,10 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc246.subsystems;
+package org.usfirst.frc246.2014robot.subsystems;
 
-import org.usfirst.frc246.RobotMap;
-import org.usfirst.frc246.commands.*;
+import org.usfirst.frc246.2014robot.RobotMap;
+import org.usfirst.frc246.2014robot.commands.*;
 import edu.wpi.first.wpilibj.*;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -44,15 +44,9 @@ public class Shooter extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
     }
     
-    public void prepToShoot() {
-        leftShootMotor.set(1.0);
-        rightShootMotor.set(1.0);
+    public void prepareToShoot() {
+        
+        
     }
-    
-    public void pickup(){
-        leftShootMotor.set(-1.0);
-        rightShootMotor.set(-1.0);
-    }
-    
 }
 
