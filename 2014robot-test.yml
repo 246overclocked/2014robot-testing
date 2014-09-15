@@ -674,7 +674,7 @@ Children:
 Properties:
   Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: /Users/michaelsilver/NetBeansProjects,
     extension: null, folder: true, name: Java Project Directory, validators: null,
-    value: /Users/michaelsilver/NetBeansProjects}
+    value: /Users/michaelsilver/Documents/GitHub/2014robot-testing}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
   Java Package: !!robotbuilder.data.properties.StringProperty {default: org.usfirst.frc0000,
