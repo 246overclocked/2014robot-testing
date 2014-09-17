@@ -54,5 +54,9 @@ public class Shooter extends Subsystem {
         rightShootMotor.set(-1.0);
     }
     
+    public void stopMotors(){
+        leftShootMotor.set(0.0);
+        rightShootMotor.set(0.0);
+    }
 }
 
