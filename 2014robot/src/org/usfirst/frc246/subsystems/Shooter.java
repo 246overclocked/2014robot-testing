@@ -58,5 +58,19 @@ public class Shooter extends Subsystem {
         leftShootMotor.set(0.0);
         rightShootMotor.set(0.0);
     }
+    
+    public void punch() {
+        kicker1.set(DoubleSolenoid.Value.kForward);
+        kicker2.set(DoubleSolenoid.Value.kForward);
+        kicker3.set(DoubleSolenoid.Value.kForward);
+        kicker4.set(DoubleSolenoid.Value.kForward);
+    }
+    
+    public void depunch() {
+        kicker1.set(DoubleSolenoid.Value.kReverse);
+        kicker2.set(DoubleSolenoid.Value.kReverse);
+        kicker3.set(DoubleSolenoid.Value.kReverse);
+        kicker4.set(DoubleSolenoid.Value.kReverse);
+    }
 }
 
