@@ -18,7 +18,7 @@ Children:
             default: '1'
             name: Output Channel (PWM)
             validators: &id003 [PWMOutput]
-            value: '1'
+            value: '4'
           Output Module (Digital): !!robotbuilder.data.properties.ChoicesProperty
             choices: &id004 ['1', '2']
             default: '1'
@@ -84,7 +84,7 @@ Children:
             default: '1'
             name: Output Channel (PWM)
             validators: *id003
-            value: '4'
+            value: '1'
           Output Module (Digital): !!robotbuilder.data.properties.ChoicesProperty
             choices: *id004
             default: '1'
@@ -155,7 +155,7 @@ Children:
           default: '1'
           name: Output Channel (PWM)
           validators: *id003
-          value: '5'
+          value: '6'
         Output Module (Digital): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id004
           default: '1'
@@ -166,34 +166,12 @@ Children:
       Name: leftArmMotor
     - Children: []
       Properties:
-        Type: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id001
-          default: Victor
-          name: Type
-          validators: null
-          value: Victor
-        Output Channel (PWM): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id002
-          default: '1'
-          name: Output Channel (PWM)
-          validators: *id003
-          value: '6'
-        Output Module (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id004
-          default: '1'
-          name: Output Module (Digital)
-          validators: *id005
-          value: '1'
-      Base: Speed Controller
-      Name: rightArmMotor
-    - Children: []
-      Properties:
         Input Channel (Analog): !!robotbuilder.data.properties.ChoicesProperty
           choices: ['1', '2', '3', '4', '5', '6', '7', '8']
           default: '1'
           name: Input Channel (Analog)
           validators: [AnalogInput]
-          value: '1'
+          value: '8'
         Input Module (Analog): !!robotbuilder.data.properties.ChoicesProperty
           choices: ['1', '2']
           default: '1'
@@ -266,28 +244,6 @@ Children:
           value: '1'
       Base: Speed Controller
       Name: leftShootMotor
-    - Children: []
-      Properties:
-        Type: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id001
-          default: Victor
-          name: Type
-          validators: null
-          value: Victor
-        Output Channel (PWM): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id002
-          default: '1'
-          name: Output Channel (PWM)
-          validators: *id003
-          value: '8'
-        Output Module (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id004
-          default: '1'
-          name: Output Module (Digital)
-          validators: *id005
-          value: '1'
-      Base: Speed Controller
-      Name: rightShootMotor
     - Children: []
       Properties:
         Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
